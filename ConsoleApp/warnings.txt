@@ -1,0 +1,21 @@
+Lista uwag:
+- Poprawić nazwę do pliku z "dataa.csv" na "data.csv", gdybyśmy wykonywali operacje na większej ilości plikach to wtedy dobrze byłoby skorzystać z obsługi wyjątków try / catch / finally dla większej kontroli na wypadek, gdyby wystąpił problem z otwarciem pliku, np. program nie znalazłby pliku o danej nazwie we wskazanej lokalizacji.
+- Wydzielić klasy do osobnych plików.
+- Dodać summary dla klas, właściwości i motod opisujące kod.
+- Podzielić metodę ImportAndPrintData na mniejsze funkcje odpwiadające za pojedyncze rzeczy.
+- Dla wewnętrznych metod klasy zastosować typ dostępu jako private.
+- Pousuwać zbędne użycia namespace'ów.
+- Dodać sprawdzanie warunku wyświetlania danych "printData".
+- Poprawić odczytywanie danych z pliku: 
+	- Pierwsza linia z headerem nie powinna trafiać do danych.
+	- Nie powinny dodawać się puste wiersze.
+	- Program powinien działać, gdy zabraknie informacji w kolumnie isNullable.
+- Wczytywanie danych do obiektu powinno obejmować wiersze z zakresu indeksu <0:importedLines.Count).
+- Wczytywanie poszczególnych danych do obiektu powinno odbywać się w konstruktorach klas ImportedObject i ImportedObjectBaseClass.
+- Przy czyszczeniu i korekcji danych można zostosować metody rozszerzające na przypisywaniu właściwości.
+- Zniwelować zagnieżdżenia instrukcji warunkowych łącząc warunki operatorami &&.
+- Poprawić formatowanie kodu, np. propsy zawijać w jedną linijkę, robić odstępy do ułatwienia czytelności kodu.
+- Dobrze jest zmienić typ pola isNullable z string na bool? z uwagi na to, że przy kolumnach powinien przyjmować wartość true / false, a przy pozystałych obiektach ma null lub pusty string. Najlepiej pozostawić opcję na wartość null, aby pole było nullable.
+- Gdy korzystamy z nullable i chcemy sprawdzić warunek przy kolumnach, gdzie mamy wartość true / false to należy taką wartość zrzutować z bool? na bool.
+
+	
